@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>💖 Meri Sona 💖</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💖</text></svg>">
+
+<!-- WhatsApp & Social Share Preview Meta Tags -->
+<meta property="og:title" content="💖 Meri Sona - Ek Special Surprise 💖">
+<meta property="og:description" content="Ye chhoti si duniya sirf tumhare liye banayi hai SONA... 💕">
+<meta property="og:image" content="https://i.ibb.co/PzVTBLL2/file-000000001da8820890f7090979bedc78.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="💖 Meri Sona 💖">
+<meta name="twitter:description" content="Special surprise for you! 💕">
+<meta name="twitter:image" content="https://i.ibb.co/PzVTBLL2/file-000000001da8820890f7090979bedc78.png">
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Poppins', cursive, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fbc2eb 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: #4a1a2c;
+    position: relative;
+    padding-bottom: 90px;
+  }
+
+  .hearts-bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .heart {
+    position: absolute;
+    color: #ff4d6d;
+    animation: floatUp linear infinite;
+    opacity: 0.6;
+    user-select: none;
+  }
+
+  @keyframes floatUp {
+    0% { transform: translateY(100vh) rotate(0deg) scale(0.5); opacity: 0; }
+    10% { opacity: 0.8; }
+    90% { opacity: 0.8; }
+    100% { transform: translateY(-120px) rotate(360deg) scale(1); opacity: 0; }
+  }
+
+  /* ===== Splash ===== */
+  .splash {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg, #ff4d6d, #d6336c, #a4133c);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    transition: opacity 1s ease, visibility 1s ease;
+  }
+
+  .splash.hide { opacity: 0; visibility: hidden; }
+
+  .splash h2 {
+    color: white;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    animation: pulse 1.5s infinite;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+
+  .splash p {
+    color: #fff0f5;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    font-style: italic;
+  }
+
+  .enter-btn {
+    padding: 15px 45px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #d6336c;
+    background: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    animation: pulse 1.5s infinite;
+    transition: transform 0.3s;
+  }
+
+  .enter-btn:active { transform: scale(0.95); }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.06); }
+  }
+
+  header {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 40px 20px 20px;
+  }
+
+  .crown { font-size: 2.5rem; animation: bounce 2s infinite; }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  h1 {
+    font-size: 2.8rem;
+    background: linear-gradient(90deg, #d6336c, #ff4d6d, #a4133c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 10px 0;
+    animation: glow 2.5s infinite;
+  }
+
+  @keyframes glow {
+    0%, 100% { filter: drop-shadow(0 0 8px rgba(214,51,108,0.5)); }
+    50% { filter: drop-shadow(0 0 20px rgba(214,51,108,0.9)); }
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    color: #7a1c3d;
+    font-style: italic;
+    margin-top: 8px;
+  }
+
+  /* ===== Counter ===== */
+  .counter-section {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 25px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(214, 51, 108, 0.25);
+    text-align: center;
+    border: 2px solid #ff8fab;
+  }
+
+  .counter-section h3 {
+    color: #d6336c;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .counter-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .counter-box {
+    background: linear-gradient(135deg, #ff4d6d, #d6336c);
+    color: white;
+    padding: 12px 5px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(214, 51, 108, 0.35);
+  }
+
+  .counter-box .num {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+  }
+
+  .counter-box .label { font-size: 0.7rem; opacity: 0.95; margin-top: 3px; }
+
+  /* ===== Photo ===== */
+  .photo-section {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 30px 15px;
+  }
+
+  .photo-frame {
+    width: 280px;
+    height: 340px;
+    background: white;
+    padding: 12px;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(214, 51, 108, 0.4);
+    transform: rotate(-3deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+  }
+
+  .photo-frame:hover, .photo-frame:active {
+    transform: rotate(0deg) scale(1.06);
+    box-shadow: 0 18px 45px rgba(214, 51, 108, 0.6);
+  }
+
+  .photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+    display: block;
+  }
+
+  .photo-frame::before {
+    content: "❤️";
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    font-size: 32px;
+    animation: pulse 1.5s infinite;
+  }
+
+  .photo-caption {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: #d6336c;
+    font-weight: bold;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    white-space: nowrap;
+  }
+
+  /* ===== Love Calculator ===== */
+  .love-calc {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 25px auto;
+    padding: 30px 25px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(255,240,245,0.95));
+    border-radius: 25px;
+    box-shadow: 0 12px 35px rgba(214, 51, 108, 0.35);
+    text-align: center;
+    border: 3px solid #ff8fab;
+  }
+
+  .love-calc h3 {
+    color: #d6336c;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+
+  .love-calc .sub {
+    color: #a4133c;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+
+  .love-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .love-inputs input {
+    padding: 14px 20px;
+    font-size: 1rem;
+    border: 2px solid #ffb3c6;
+    border-radius: 50px;
+    outline: none;
+    background: white;
+    color: #6a1b3a;
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.3s;
+  }
+
+  .love-inputs input:focus {
+    border-color: #ff4d6d;
+    box-shadow: 0 0 15px rgba(255, 77, 109, 0.35);
+    transform: scale(1.02);
+  }
+
+  .love-inputs input::placeholder {
+    color: #d6a2b3;
+    font-weight: normal;
+  }
+
+  .calc-btn {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #ff4d6d, #d6336c);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 22px rgba(214, 51, 108, 0.5);
+    transition: all 0.3s;
+    margin-bottom: 20px;
+  }
+
+  .calc-btn:active { transform: scale(0.96); }
+
+  .calc-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(214, 51, 108, 0.7);
+  }
+
+  .result-box {
+    display: none;
+    animation: popIn 0.6s ease;
+  }
+
+  .result-box.show { display: block; }
+
+  .heart-meter {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heart-meter svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 6px 18px rgba(214,51,108,0.5));
+  }
+
+  .heart-meter .progress-ring {
+    fill: none;
+    stroke: url(#heartGrad);
+    stroke-width: 8;
+    stroke-linecap: round;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    transition: stroke-dashoffset 1.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: rotate(-90deg);
+    transform-origin: center;
+  }
+
+  .percent-text {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #d6336c;
+    text-shadow: 0 3px 10px rgba(255,255,255,0.9);
+    z-index: 2;
+  }
+
+  .result-msg {
+    font-size: 1.15rem;
+    color: #6a1b3a;
+    line-height: 1.8;
+    padding: 15px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 15px;
+    border: 2px dashed #ffb3c6;
+    margin-bottom: 15px;
+    font-weight: 500;
+  }
+
+  .share-result-btn {
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.4);
+    transition: transform 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .share-result-btn:active { transform: scale(0.95); }
+
+  /* ===== Shayari ===== */
+  .shayari-section {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 35px 25px;
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 25px;
+    box-shadow: 0 12px 35px rgba(214, 51, 108, 0.3);
+    text-align: center;
+    border: 2px dashed #ff8fab;
+    overflow: hidden;
+  }
+
+  .shayari-section::before {
+    content: "❝";
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    font-size: 4rem;
+    color: #ffc9d6;
+    font-family: Georgia, serif;
+    line-height: 1;
+  }
+
+  .shayari-section::after {
+    content: "❞";
+    position: absolute;
+    bottom: -10px;
+    right: 15px;
+    font-size: 4rem;
+    color: #ffc9d6;
+    font-family: Georgia, serif;
+    line-height: 1;
+  }
+
+  .shayari {
+    font-size: 1.35rem;
+    line-height: 2.2;
+    color: #6a1b3a;
+    font-weight: 500;
+    min-height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ===== Buttons ===== */
+  .btn-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 25px 15px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .btn {
+    padding: 14px 28px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #ff4d6d, #d6336c);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(214, 51, 108, 0.45);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .btn:hover, .btn:active {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(214, 51, 108, 0.65);
+  }
+
+  .btn-whatsapp {
+    background: linear-gradient(135deg, #25D366, #128C7E) !important;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45) !important;
+  }
+
+  .btn-whatsapp:hover {
+    box-shadow: 0 12px 30px rgba(37, 211, 102, 0.65) !important;
+  }
+
+  /* ===== Modal ===== */
+  .modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation: fadeIn 0.3s;
+    backdrop-filter: blur(4px);
+  }
+
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+  .modal-content {
+    background: linear-gradient(135deg, #fff0f5, #ffe0eb);
+    padding: 35px 25px;
+    border-radius: 25px;
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45);
+    border: 3px solid #ff8fab;
+    animation: popIn 0.4s ease;
+  }
+
+  @keyframes popIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  .modal-content .emoji {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 10px;
+    animation: bounce 1.5s infinite;
+  }
+
+  .modal-content h2 {
+    color: #d6336c;
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+  }
+
+  .modal-content p {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: #6a1b3a;
+    margin-bottom: 25px;
+  }
+
+  .modal-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .close-btn {
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #ff4d6d, #d6336c);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(214, 51, 108, 0.5);
+  }
+
+  .wa-share-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.5);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  /* ===== Reasons ===== */
+  .reasons {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .reasons h2 {
+    color: #d6336c;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+
+  .reason-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+  }
+
+  .reason-card {
+    background: rgba(255, 255, 255, 0.92);
+    padding: 20px 12px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(214, 51, 108, 0.2);
+    transition: transform 0.3s;
+    border: 2px solid #ffd0dc;
+  }
+
+  .reason-card:active { transform: scale(0.96); }
+
+  .reason-card .ico { font-size: 2rem; display: block; margin-bottom: 8px; }
+
+  .reason-card p {
+    font-size: 0.9rem;
+    color: #6a1b3a;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  footer {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 35px 20px 20px;
+    font-size: 1rem;
+    color: #7a1c3d;
+    font-style: italic;
+  }
+
+  footer .heartbeat {
+    display: inline-block;
+    animation: heartbeat 1.3s infinite;
+  }
+
+  @keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    25% { transform: scale(1.25); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.15); }
+  }
+
+  /* ===== Floating WhatsApp Share Button (Bottom Right) ===== */
+  .floating-wa {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+    z-index: 500;
+    transition: transform 0.3s;
+    animation: waPulse 2s infinite;
+    border: 3px solid white;
+  }
+
+  .floating-wa:active { transform: scale(0.9); }
+
+  .floating-wa svg {
+    width: 32px;
+    height: 32px;
+    fill: white;
+  }
+
+  @keyframes waPulse {
+    0%, 100% { box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5); }
+    50% { box-shadow: 0 8px 35px rgba(37, 211, 102, 0.9); }
+  }
+
+  /* ===== Bottom Action Bar (Mobile) ===== */
+  .bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 8px;
+    z-index: 400;
+    box-shadow: 0 -4px 20px rgba(214, 51, 108, 0.15);
+    border-top: 2px solid #ffd0dc;
+  }
+
+  .bar-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #d6336c;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 6px 4px;
+    border-radius: 12px;
+    transition: background 0.3s;
+  }
+
+  .bar-item:active { background: #ffe0eb; }
+
+  .bar-item .bar-ico {
+    font-size: 1.4rem;
+  }
+
+  .bar-item.whatsapp {
+    color: #128C7E;
+  }
+
+  /* ===== Heart-shaped Progress Ring ===== */
+  /* Mobile */
+  @media (max-width: 600px) {
+    body { padding-bottom: 80px; }
+    h1 { font-size: 2rem; }
+    .crown { font-size: 2rem; }
+    .subtitle { font-size: 0.95rem; }
+    .photo-frame { width: 260px; height: 320px; }
+    .shayari { font-size: 1.1rem; line-height: 2; min-height: 120px; }
+    .btn { padding: 12px 22px; font-size: 0.9rem; }
+    .counter-box .num { font-size: 1.2rem; }
+    .counter-box .label { font-size: 0.6rem; }
+    .modal-content { padding: 25px 20px; }
+    .modal-content h2 { font-size: 1.4rem; }
+    .modal-content p { font-size: 1rem; }
+    .reasons h2 { font-size: 1.3rem; }
+    .reason-card p { font-size: 0.8rem; }
+    .splash h2 { font-size: 1.7rem; }
+    .love-calc h3 { font-size: 1.25rem; }
+    .love-calc .sub { font-size: 0.85rem; }
+    .love-inputs input { padding: 12px 18px; font-size: 0.95rem; }
+    .calc-btn { padding: 13px 32px; font-size: 1rem; }
+    .heart-meter { width: 140px; height: 140px; }
+    .percent-text { font-size: 1.7rem; }
+    .result-msg { font-size: 1rem; }
+    .floating-wa { width: 55px; height: 55px; bottom: 90px; }
+    .floating-wa svg { width: 28px; height: 28px; }
+  }
+
+  @media (max-width: 360px) {
+    .photo-frame { width: 230px; height: 290px; }
+    .btn { padding: 10px 18px; font-size: 0.85rem; }
+    .bar-item { font-size: 0.6rem; }
+    .bar-item .bar-ico { font-size: 1.2rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Splash -->
+<div class="splash" id="splash">
+  <div style="font-size:4rem;">💖</div>
+  <h2>Hey SONA 💕</h2>
+  <p>Ye chhoti si duniya sirf tumhare liye banayi hai...</p>
+  <button class="enter-btn" onclick="enterSite()">Enter My Heart 💝</button>
+</div>
+
+<div class="hearts-bg" id="heartsBg"></div>
+
+<!-- Header -->
+<header>
+  <div class="crown">👑</div>
+  <h1>Meri Sona 💖</h1>
+  <p class="subtitle">~ Tum ho toh sab kuch hai ~</p>
+</header>
+
+<!-- Counter -->
+<section class="counter-section">
+  <h3>💘 Hamara Pyaar Ka Safar 💘</h3>
+  <div class="counter-grid">
+    <div class="counter-box"><span class="num" id="days">0</span><span class="label">Din</span></div>
+    <div class="counter-box"><span class="num" id="hours">0</span><span class="label">Ghante</span></div>
+    <div class="counter-box"><span class="num" id="mins">0</span><span class="label">Minute</span></div>
+    <div class="counter-box"><span class="num" id="secs">0</span><span class="label">Second</span></div>
+  </div>
+</section>
+
+<!-- Photo -->
+<section class="photo-section">
+  <div class="photo-frame">
+    <img src="https://i.ibb.co/PzVTBLL2/file-000000001da8820890f7090979bedc78.png" alt="Meri Sona">
+    <div class="photo-caption">💕 Meri Jaan SONA</div>
+  </div>
+</section>
+
+<!-- Love Calculator -->
+<section class="love-calc">
+  <h3>💘 Love Calculator 💘</h3>
+  <p class="sub">Dono ke naam daalo aur dekho pyaar kitna hai!</p>
+  
+  <div class="love-inputs">
+    <input type="text" id="name1" placeholder="💙 Tumhara Naam" maxlength="20">
+    <input type="text" id="name2" placeholder="💖 SONA ka Naam" maxlength="20">
+  </div>
+  
+  <button class="calc-btn" onclick="calculateLove()">💕 Calculate Love 💕</button>
+
+  <div class="result-box" id="resultBox">
+    <div class="heart-meter">
+      <svg viewBox="0 0 160 160">
+        <defs>
+          <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ff4d6d"/>
+            <stop offset="50%" stop-color="#d6336c"/>
+            <stop offset="100%" stop-color="#a4133c"/>
+          </linearGradient>
+        </defs>
+        <circle class="progress-ring" cx="80" cy="80" r="70"></circle>
+      </svg>
+      <div class="percent-text" id="percentText">0%</div>
+    </div>
+    <div class="result-msg" id="resultMsg"></div>
+    <button class="share-result-btn" onclick="shareResult()">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      WhatsApp par Share
+    </button>
+  </div>
+</section>
+
+<!-- Shayari -->
+<section class="shayari-section">
+  <div class="shayari" id="shayari">
+    तुम्हारी आँखों में जो नशा है,<br>वो किसी शराब में कहाँ... 💕
+  </div>
+</section>
+
+<!-- Buttons -->
+<div class="btn-container">
+  <button class="btn" onclick="newShayari()">💌 Nayi Shayari</button>
+  <button class="btn" onclick="showLove()">❤️ I Love You</button>
+  <button class="btn" onclick="showMessage('miss')">🥺 Miss You</button>
+  <button class="btn" onclick="showMessage('forever')">♾️ Forever</button>
+  <button class="btn" onclick="showMessage('sorry')">🌸 Sorry</button>
+  <button class="btn" onclick="showMessage('cute')">😘 Cute Ho Tum</button>
+  <button class="btn btn-whatsapp" onclick="shareOnWhatsApp()">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    WhatsApp Share
+  </button>
+</div>
+
+<!-- Reasons -->
+<section class="reasons">
+  <h2>💝 Tumse Pyaar Karne Ki Wajah 💝</h2>
+  <div class="reason-cards">
+    <div class="reason-card"><span class="ico">😊</span><p>Tumhari hansi meri duniya</p></div>
+    <div class="reason-card"><span class="ico">👀</span><p>Tumhari aankhen meri jannat</p></div>
+    <div class="reason-card"><span class="ico">🤗</span><p>Tumhara saath meri taakat</p></div>
+    <div class="reason-card"><span class="ico">💬</span><p>Tumhari baatein meri sukoon</p></div>
+    <div class="reason-card"><span class="ico">🌹</span><p>Tum meri sabse pyari</p></div>
+    <div class="reason-card"><span class="ico">💖</span><p>Tum ho toh sab kuch hai</p></div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="emoji" id="modalEmoji">💖</span>
+    <h2 id="modalTitle">💖</h2>
+    <p id="modalText"></p>
+    <div class="modal-actions">
+      <button class="wa-share-btn" onclick="shareCurrentMessage()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Share
+      </button>
+      <button class="close-btn" onclick="closeModal()">Close 💕</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  Made with <span class="heartbeat">❤️</span> only for you, <b>SONA</b> 🌹
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<div class="floating-wa" onclick="shareOnWhatsApp()" title="WhatsApp par share karo">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</div>
+
+<!-- Bottom Action Bar -->
+<div class="bottom-bar">
+  <button class="bar-item" onclick="scrollToTop()">
+    <span class="bar-ico">🏠</span>
+    <span>Home</span>
+  </button>
+  <button class="bar-item" onclick="document.querySelector('.love-calc').scrollIntoView({behavior:'smooth'})">
+    <span class="bar-ico">💘</span>
+    <span>Calculator</span>
+  </button>
+  <button class="bar-item" onclick="showLove()">
+    <span class="bar-ico">❤️</span>
+    <span>Love</span>
+  </button>
+  <button class="bar-item whatsapp" onclick="shareOnWhatsApp()">
+    <span class="bar-ico">📤</span>
+    <span>Share</span>
+  </button>
+</div>
+
+<script>
+  // ===== Shayari =====
+  const shayaris = [
+    "तुम्हारी आँखों में जो नशा है,<br>वो किसी शराब में कहाँ... 💕",
+    "तेरे बिना ये दिल अधूरा है SONA,<br>तू मेरी सबसे प्यारी मजबूरी है... ❤️",
+    "हर दुआ में तेरा नाम आता है,<br>तू मेरी ज़िंदगी की सबसे खूबसूरत शाम है... 🌹",
+    "चाँद भी शरमा जाए तेरे नूर से,<br>कैसे ना प्यार करूँ मैं तुझसे पूरे दिल से... ✨",
+    "तेरी हँसी मेरी सुबह है SONA,<br>तेरा साथ मेरी जन्नत है... 💖",
+    "ज़माने की हर खुशी तुझमें ढूँढी,<br>तू ही मेरी दुनिया, तू ही मेरी जान... 💝",
+    "तेरे बालों की खुशबू में खो जाता हूँ,<br>तेरी बातों में हर रोज़ मर जाता हूँ... 🌸",
+    "तू मेरी सुबह की पहली किरण है,<br>तू मेरी रात का आखिरी ख्वाब... 🌙",
+    "SONA naam hi kaafi hai,<br>दिल को sukoon dene ke liye... 💕"
+  ];
+
+  let currentIndex = 0;
+
+  function newShayari() {
+    currentIndex = (currentIndex + 1) % shayaris.length;
+    const el = document.getElementById('shayari');
+    el.style.opacity = 0;
+    el.style.transform = 'translateY(20px)';
+    setTimeout(() => {
+      el.innerHTML = shayaris[currentIndex];
+      el.style.opacity = 1;
+      el.style.transform = 'translateY(0)';
+    }, 300);
+  }
+
+  // ===== LOVE CALCULATOR =====
+  function calculateLove() {
+    const name1 = document.getElementById('name1').value.trim();
+    const name2 = document.getElementById('name2').value.trim();
+
+    if (!name1 || !name2) {
+      alert('💕 Dono ke naam likho pehle!');
+      return;
+    }
+
+    const combined = (name1 + name2).toLowerCase().replace(/\s+/g, '');
+    let hash = 0;
+    for (let i = 0; i < combined.length; i++) {
+      hash = (hash * 31 + combined.charCodeAt(i)) % 1000000;
+    }
+    
+    let percent = 60 + (hash % 41);
+    
+    if (name1.toLowerCase().includes('sona') || name2.toLowerCase().includes('sona')) {
+      percent = Math.max(percent, 95);
+    }
+
+    displayResult(percent, name1, name2);
+  }
+
+  let lastResult = { percent: 0, name1: '', name2: '', msg: '' };
+
+  function displayResult(percent, name1, name2) {
+    const box = document.getElementById('resultBox');
+    const text = document.getElementById('percentText');
+    const msg = document.getElementById('resultMsg');
+    const ring = document.querySelector('.progress-ring');
+
+    box.classList.add('show');
+    ring.style.strokeDashoffset = 440;
+
+    let current = 0;
+    const step = Math.max(1, Math.floor(percent / 40));
+    const interval = setInterval(() => {
+      current += step;
+      if (current >= percent) {
+        current = percent;
+        clearInterval(interval);
+      }
+      text.textContent = current + '%';
+    }, 25);
+
+    setTimeout(() => {
+      const offset = 440 - (440 * percent / 100);
+      ring.style.strokeDashoffset = offset;
+    }, 100);
+
+    let message = '';
+    if (percent >= 95) {
+      message = `💖 ${name1} aur ${name2} —<br>Ye toh made for each other hai!<br>Rab ne bana di jodi... 💍✨`;
+    } else if (percent >= 85) {
+      message = `💕 ${name1} aur ${name2} —<br>Bahut hi pyara jodi hai!<br>Ishq ka rang chadha hai! 🌹`;
+    } else if (percent >= 75) {
+      message = `💗 ${name1} aur ${name2} —<br>Pyaar toh bahut hai,<br>bas nibhate raho! 💝`;
+    } else if (percent >= 65) {
+      message = `💓 ${name1} aur ${name2} —<br>Achhi compatibility hai!<br>Ek doosre ka khayal rakho 🌸`;
+    } else {
+      message = `💞 ${name1} aur ${name2} —<br>Pyaar thoda aur badhao,<br>dil se dil mila do! 😘`;
+    }
+    msg.innerHTML = message;
+
+    // Save for sharing
+    lastResult = {
+      percent: percent,
+      name1: name1,
+      name2: name2,
+      msg: message.replace(/<br>/g, '\n')
+    };
+
+    burstHearts();
+
+    setTimeout(() => {
+      box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 400);
+  }
+
+  // ===== WhatsApp Share Functions =====
+  function shareOnWhatsApp() {
+    const url = window.location.href;
+    const text = `💖 *Meri Sona* 💖\n\nYe website maine specially tumhare liye banayi hai SONA... 🥺💕\n\nEk baar khol ke toh dekho, bahut kuch hai tumhare liye! ❤️\n\n🔗 ${url}\n\n_Miss you jaan_ 😘💖`;
+    const waUrl = `https://wa.me/?text=${encodeURIComponent(text)}`;
+    window.open(waUrl, '_blank');
+  }
+
+  function shareResult() {
+    if (!lastResult.percent) {
+      alert('Pehle love calculate karo! 💕');
+      return;
+    }
+    const url = window.location.href;
+    const text = `💘 *Love Calculator Result* 💘\n\n👤 ${lastResult.name1}\n💖 ${lastResult.name2}\n\n💯 *Pyaar: ${lastResult.percent}%*\n\n${lastResult.msg}\n\n_Tum bhi try karo!_ 👇\n${url}`;
+    const waUrl = `https://wa.me/?text=${encodeURIComponent(text)}`;
+    window.open(waUrl, '_blank');
+  }
+
+  let currentMessage = '';
+  function shareCurrentMessage() {
+    const url = window.location.href;
+    const title = document.getElementById('modalTitle').textContent;
+    const text = document.getElementById('modalText').innerText;
+    const shareText = `${title}\n\n${text}\n\n💖 Ye website dekho: ${url}`;
+    const waUrl = `https://wa.me/?text=${encodeURIComponent(shareText)}`;
+    window.open(waUrl, '_blank');
+  }
+
+  // ===== Popups =====
+  function showMessage(type) {
+    const modal = document.getElementById('modal');
+    const emoji = document.getElementById('modalEmoji');
+    const title = document.getElementById('modalTitle');
+    const text = document.getElementById('modalText');
+
+    const messages = {
+      miss: { emoji: '🥺', title: 'Miss You SONA', text: 'तुम्हारी याद में हर पल बिताता हूँ,<br>तुम्हारे बिना अधूरा हूँ मैं...<br>जल्दी आ जाओ meri jaan! 💕' },
+      forever: { emoji: '♾️', title: 'Forever Together', text: 'हर जनम में तुम्हें चाहूँगा SONA,<br>तुम मेरी हो और हमेशा मेरी रहोगी...<br>Ye wada hai mera! 💖' },
+      sorry: { emoji: '🌸', title: 'Sorry Meri Jaan', text: 'Agar kabhi dukh diya ho tumhe,<br>Toh maaf kar do mujhe SONA...<br>Tumhare bina main kuch bhi nahi! 🙏💕' },
+      cute: { emoji: '😘', title: 'Cute Ho Tum', text: 'Duniya ki sabse cute ladki ho tum,<br>Tumhari smile pe marta hoon main...<br>Meri SONA hamesha khush rahe! 💖' }
+    };
+
+    const m = messages[type];
+    emoji.textContent = m.emoji;
+    title.textContent = m.title;
+    text.innerHTML = m.text;
+    modal.style.display = 'flex';
+  }
+
+  function showLove() {
+    const modal = document.getElementById('modal');
+    document.getElementById('modalEmoji').textContent = '❤️';
+    document.getElementById('modalTitle').textContent = 'I Love You SONA';
+    document.getElementById('modalText').innerHTML = "तुम मेरी जान हो, मेरी दुनिया हो,<br>तुम्हारे बिना मैं कुछ भी नहीं हूँ...<br>हमेशा तुमसे प्यार करता रहूँगा! 💖🌹";
+    modal.style.display = 'flex';
+    burstHearts();
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  function enterSite() {
+    document.getElementById('splash').classList.add('hide');
+    burstHearts();
+  }
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // ===== Hearts =====
+  function burstHearts() {
+    for (let i = 0; i < 40; i++) {
+      setTimeout(() => createHeart(true), i * 30);
+    }
+  }
+
+  function createHeart(burst = false) {
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+    heart.innerHTML = ['❤️','💖','💕','💗','🌹','💝','💘','🌸'][Math.floor(Math.random()*8)];
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.fontSize = (15 + Math.random() * 25) + 'px';
+    
+    if (burst) {
+      heart.style.animationDuration = '3s';
+      heart.style.top = '40vh';
+    } else {
+      heart.style.animationDuration = (6 + Math.random() * 6) + 's';
+      heart.style.animationDelay = Math.random() * 5 + 's';
+    }
+    
+    document.getElementById('heartsBg').appendChild(heart);
+    setTimeout(() => heart.remove(), 12000);
+  }
+
+  setInterval(() => createHeart(), 900);
+
+  // ===== Counter =====
+  const startDate = new Date('2024-01-01T00:00:00'); // Apni date yahan daalein
+
+  function updateCounter() {
+    const now = new Date();
+    const diff = now - startDate;
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const mins = Math.floor((diff / (1000 * 60)) % 60);
+    const secs = Math.floor((diff / 1000) % 60);
+
+    document.getElementById('days').textContent = days;
+    document.getElementById('hours').textContent = hours;
+    document.getElementById('mins').textContent = mins;
+    document.getElementById('secs').textContent = secs;
+  }
+  updateCounter();
+  setInterval(updateCounter, 1000);
+
+  document.getElementById('modal').addEventListener('click', (e) => {
+    if (e.target.id === 'modal') closeModal();
+  });
+
+  setInterval(() => {
+    if (document.getElementById('modal').style.display !== 'flex') newShayari();
+  }, 7000);
+
+  let lastTap = 0;
+  document.body.addEventListener('touchend', () => {
+    const now = Date.now();
+    if (now - lastTap < 300) burstHearts();
+    lastTap = now;
+  });
+
+  document.getElementById('name1').addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') document.getElementById('name2').focus();
+  });
+  document.getElementById('name2').addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') calculateLove();
+  });
+</script>
+
+</body>
+</html>
